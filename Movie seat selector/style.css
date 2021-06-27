@@ -12,7 +12,7 @@ body{
 }
 .select-seat-comtainer select{
     padding: 5px;
-    margin-left: 5px;
+    margin: 5px;
     border: 0;
     border-radius: 5px;
 }
@@ -20,7 +20,7 @@ body{
     height: 15px;
     width: 15px;
     background-color: #346751;
-    margin: 5px;
+    margin: 10px;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
 }
@@ -29,10 +29,10 @@ body{
     transform: scale(1.25);
 }
 .seat:nth-of-type(2){
-    margin-right: 30px;
+    margin-right: 50px;
 }
 .seat:nth-last-of-type(2){
-    margin-left: 30px;
+    margin-left: 50px;
 }
 .seat.selected{
 background-color: #EBA83A;
@@ -44,13 +44,25 @@ background-color: #EBA83A;
     display: flex;
     align-items: center;
     justify-content: center;
+    
+    
 }
 .theater-seat{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.legends .seat:hover{
+.legends0.seat:hover{
     transform: scale(1);
     cursor: default;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.text{
+    margin-top: 30px;
+    padding: 10px;
 }
