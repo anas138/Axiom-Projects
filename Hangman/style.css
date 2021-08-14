@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+
+    background-color: azure;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    height: 80vh;
+    margin: 0;
+    overflow: hidden;
+   
+    
+    
+    
+    
+    
+}
+body h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+}
+body p1{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    position: relative;
+    
+    
+    
+    
+    
+ 
+    
+
+
+}
+
+.svg-components{
+    fill: transparent;
+    stroke: black;
+    stroke-linecap: round;
+    stroke-width: 5px;
+    margin-right: 70px;
+}
+.incorrect-gusse{
+    position: absolute;
+    top: 30px;
+    left: 200px;
+    text-align: right;
+    
+
+}
+.word{
+    display: flex;
+    
+    justify-content: center;
+}
+.letter{
+    font-size: 20px;
+    border-bottom: 2px solid black;
+    margin: 0 5px;
+    width: 20px;
+    height: auto;
+    text-align: center;
+    
+}
+.hangman{
+    display:none;
+}
+.hangman.show{
+    display:flex
+}
+.gameover-container{
+    display: none;
+    background-color:white;
+    position: absolute;
+    top: 180px;
+    border: 2px solid black;
+    padding: 20px;
+    width: 500px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.gameover-container button{
+    padding: 10px;
+    border: 0;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.gameover-container button:active{
+    transform: scale(.9);
+}
+#notification-container{
+    display: none;
+    position:absolute;
+    bottom: 0;
+    
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Hangman</title>
+</head>
+<body>
+    <h2>Hangman</h2>
+    <p> Please use your keboard to guess the letter and complete hidden word </p>
+    <div class="container">
+        <svg class="svg-components" height='250px' width='200px'>
+          <line x1='20px' y1='40px' x2='100px'y2='40px'/>
+          <line x1='100px' y1='40px' x2='100px'y2='60px'/>
+          <line x1='20px' y1='40px' x2='20px'y2='250px'/>
+          <line x1='10px' y1='250px' x2='30px'y2='250px'/>
+
+
+          <circle cx='100px' cy='80px' r='20' class="hangman"/>
+          <line x1='100px' y1='100px' x2='100px'y2='160px'  class="hangman"/>
+          <line x1='100px' y1='110px' x2='80px'y2='140px'  class="hangman"/>
+          <line x1='100px' y1='110px' x2='120px'y2='140px'  class="hangman"/>
+          <line x1='100px' y1='160px' x2='80px'y2='200px'  class="hangman"/>
+          <line x1='100px' y1='160px' x2='120px'y2='200px'  class="hangman"/>
+        </svg>
+        <div class="incorrect-gusse">
+            <p>Incorrect Guesse</p>
+            <span id='incorrect-words'></span>
+            </div>
+            <div class="word" id='word'>
+                <div class="letter" id="letter">a</div>
+                
+            </div>
+       
+    </div>
+    <div class="gameover-container" id='gameover-container'>
+        <div class="popup">
+            <h2 id="gameover"></h2>
+            <button id="play-again">Play Again</button>
+        </div>
+
+    </div>
+    <div class="notification-container" id='notification-container'>
+        <p>You Already Guess This Word</p>
+    </div>
+
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
